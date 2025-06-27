@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afternoon Desires - Sitio Oficial</title>
+    <meta name="description" content="Sitio oficial de Afternoon Desires, banda de indie rock de Santiago de Chile. Conoce nuestra música, biografía y próximas fechas.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="#" class="nav-logo" data-key="band_name_logo">Afternoon Desires</a>
+        <div class="nav-links-container">
+            <div class="nav-links">
+                <a href="#biografia" data-key="nav_bio">Biografía</a>
+                <a href="#influencias" data-key="nav_influences">Influencias</a>
+                <a href="#miembros" data-key="nav_members">Miembros</a>
+                <a href="#discografia" data-key="nav_discography">Discografía</a>
+                <a href="#publicaciones" data-key="nav_releases">Publicaciones</a>
+                <a href="#media" data-key="nav_media">Media</a>
+                <a href="#dates" data-key="nav_dates">Próximas Fechas</a>
+                <a href="#contacto" data-key="nav_contact">Contacto</a>
+            </div>
+            <div class="language-switcher">
+                <a href="#" class="lang-link active" data-lang="es">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22.5" viewBox="0 0 30 22.5">
+                        <rect width="30" height="22.5" fill="#C60B1E"/>
+                        <rect width="30" height="11.25" y="5.625" fill="#FFC400"/>
+                    </svg>
+                </a>
+                <a href="#" class="lang-link" data-lang="en">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22.5" viewBox="0 0 30 22.5">
+                        <path fill="#012169" d="M0 0h30v22.5H0z"/>
+                        <path fill="#fff" d="M0 0l30 22.5m0-22.5L0 22.5"/>
+                        <path stroke="#c8102e" stroke-width="4.5" d="M0 0l30 22.5m0-22.5L0 22.5"/>
+                        <path stroke="#fff" stroke-width="7.5" d="M15 0v22.5M0 11.25h30"/>
+                        <path stroke="#c8102e" stroke-width="4.5" d="M15 0v22.5M0 11.25h30"/>
+                    </svg>
+                </a>
+                <a href="#" class="lang-link" data-lang="fr">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22.5" viewBox="0 0 30 22.5">
+                        <path fill="#002395" d="M0 0h10v22.5H0z"/>
+                        <path fill="#fff" d="M10 0h10v22.5H10z"/>
+                        <path fill="#ed2939" d="M20 0h10v22.5H20z"/>
+                    </svg>
+                </a>
+                <a href="#" class="lang-link" data-lang="pt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22.5" viewBox="0 0 30 22.5">
+                        <path fill="#006a4e" d="M0 0h30v22.5H0z"/>
+                        <path fill="#f4c300" d="m15 2.25-10.5 9 10.5 9 10.5-9z"/>
+                        <circle fill="#002776" cx="15" cy="11.25" r="4.5"/>
+                        <path fill="#f1f1f1" d="M10.5 11.25a4.5 4.5 0 0 0 4.5-4.5 1 .5 0 0 0-1-1 4.5 4.5 0 0 1-3.5 5.5z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+    </nav>
+
+    <div class="social-sidebar">
+        <a href="https://open.spotify.com/intl-es/artist/23YGu7MJkCGDuY2uSCnz4x" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/afternoondesires/" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+            </svg>
+        </a>
+        <a href="https://youtube.com/@afternoondesires" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+        </a>
+        <a href="https://music.apple.com/us/artist/afternoon-desires/1660102697?l=es-MX" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043C21.003.517 20.373.285 19.7.164c-.517-.093-1.038-.137-1.563-.132-.05-.018-.098-.033-.15-.05C17.628-.016 17.257 0 16.89 0c-.339 0-.679.019-1.015.058-.557.064-1.082.298-1.539.61-.46.293-.874.705-1.284 1.087-.245.232-.496.526-.739.808-.126.144-.243.304-.354.465-.11-.156-.243-.316-.354-.46-.245-.282-.497-.577-.742-.808-.41-.382-.824-.794-1.284-1.087C9.146.374 8.62.14 8.064.076c-.336-.039-.676-.058-1.015-.058-.37 0-.742.017-1.099.051-.055.019-.102.035-.157.054-.425.02-.846.063-1.263.132C3.857.285 3.227.517 2.652.892 1.534 1.624.788 2.624.472 3.935c-.175.72-.24 1.452-.24 2.19 0 .657.058 1.32.174 1.973.168.95.47 1.858.892 2.73.345.71.764 1.368 1.262 1.967.58.696 1.237 1.29 1.95 1.83.744.557 1.584.967 2.396 1.4.896.48 1.82.895 2.763 1.274.555.228 1.11.456 1.667.678.177.067.34.15.517.216.265.088.537.161.808.241.09.027.168.081.262.099.435.077.877.123 1.32.147.396.02.791.027 1.188.02.398-.006.791-.052 1.188-.099.155-.02.312-.035.465-.066.327-.067.65-.155.97-.242.195-.054.39-.119.583-.177.553-.222 1.109-.45 1.664-.678.943-.379 1.868-.794 2.763-1.274.812-.433 1.652-.843 2.396-1.4.713-.54 1.37-1.133 1.95-1.83.498-.599.917-1.256 1.262-1.967.422-.872.724-1.78.892-2.73.116-.653.174-1.316.174-1.973 0-.738-.064-1.47-.24-2.19zm-12.053 9.84c-1.939-.827-3.799-1.76-5.533-2.923-.42-.282-.822-.603-1.208-.945-.538-.478-.994-1.024-1.316-1.685-.405-.827-.577-1.714-.577-2.626 0-.709.089-1.411.307-2.082.297-.912.837-1.674 1.693-2.182.698-.413 1.467-.574 2.273-.62.775-.043 1.544.014 2.313.133.688.107 1.304.397 1.84.861.428.374.822.781 1.222 1.179.399-.398.793-.805 1.222-1.179.536-.464 1.152-.754 1.84-.861.769-.119 1.538-.176 2.313-.133.806.046 1.575.207 2.273.62.856.508 1.396 1.27 1.693 2.182.218.671.307 1.373.307 2.082 0 .912-.171 1.799-.577 2.626-.322.661-.778 1.207-1.316 1.685-.386.342-.788.663-1.208.945-1.734 1.164-3.594 2.097-5.533 2.923-.565.241-1.126.486-1.695.71-.567-.224-1.128-.469-1.693-.71z"/>
+            </svg>
+        </a>
+        <a href="https://tiktok.com/@afternoondesires" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+            </svg>
+        </a>
+        <a href="https://letras.com/afternoon-desires/" target="_blank" class="social-link letras">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
+            </svg>
+        </a>
+        <a href="https://facebook.com/afternoondesires" target="_blank">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/56931341539" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+        </a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-key="band_name_hero">AFTERNOON DESIRES</h1>
+            <p data-key="hero_subtitle">Sitio Oficial</p>
+        </div>
+    </header>
+
+    <!-- 1. BIOGRAFÍA -->
+    <section id="biografia" class="biografia">
+        <h2 data-key="bio_title">BIOGRAFÍA</h2>
+        <div class="bio-content">
+            <p data-key="bio_p1">Afternoon Desires es una banda chilena formada en 2022 por Leo Arévalo (voz, letras, música, producción) y Criss Soriano (guitarra, sinthes). Su propuesta musical mezcla indie rock, ambient pop, soft rock y dream pop, generando una experiencia emocional e inmersiva a través de capas sonoras profundas, reverberaciones oníricas y una voz íntima que susurra más de lo que grita.</p>
+            <p data-key="bio_p2">Inspirados por la estética del blanco y negro, paisajes envolventes, la fotografía independiente y el peso emocional del pensamiento y del deseo, sus canciones —cantadas íntegramente en inglés— abordan temas como la pérdida, el amor, el desamor, la nostalgia y la introspección.</p>
+            <p data-key="bio_p3">Con su reciente EP DVRKSIDE (2024) y sus anteriores trabajos, Afternoon Desires consolidó su sello sonoro: delicado pero intenso, sombrío pero cálido. Con una imagen cuidada y minimalista, Afternoon Desires se proyecta hacia audiencias internacionales, especialmente en Argentina, México, España, Brasil, la costa oeste de EE. UU. y Europa, donde su estética emocional y visual encuentra eco natural.</p>
+            <p data-key="bio_p4">Hoy han sumado una nueva formación con la llegada de Pablo Fuster en el bajo y Benjamín Rivera en la batería, con la cual Afternoon Desires proyecta llevar al escenario en vivo toda su esencia y atmósfera, con una nueva sonoridad e interpretación que potencie todas sus características.</p>
+            <p data-key="bio_p5">Para este 2025 están preparando su primer álbum de larga duración, "The Weight of Silence", el cual posee su sello característico sonoro, agregando mayor atmósfera, profundidad y rítmica a lo que ya han creado anteriormente. Con esto, refuerzan su lugar como una de las bandas emergentes más evocadoras del panorama indie latinoamericano.</p>
+        </div>
+    </section>
+
+    <!-- 2. INFLUENCIAS Y ESTILO -->
+    <section id="influencias" class="biografia">
+        <h2 data-key="influences_title">INFLUENCIAS Y ESTILO</h2>
+        <div class="bio-content">
+            <p data-key="influences_p1">El sonido melancólico y atmosférico de Afternoon Desires combina texturas envolventes y una estética minimalista evocando influencias como Cigarettes After Sex, Radiohead, Chris Cornell, Slowdive, Beach House, Zola Blood entre otros y su puesta en escena nace del estilo de los aclamados MTV unplugged. Desde su debut en 2022, han capturado la atención de oyentes sensibles al detalle emocional y visual, utilizando recursos como el mar y la ciudad para hacer sentir las sensaciones que desean transmitir a sus seguidores posicionándose como una de las propuestas más atmosféricas y profundas del sur de América Latina.</p>
+            <div class="influences-list">
+                <p><strong data-key="influences_genres_title">Géneros:</strong><span data-key="influences_genres_text"> Indie rock / Dream pop / Ambient</span></p>
+                <p><strong data-key="influences_image_title">Imagen:</strong><span data-key="influences_image_text"> Oscura, minimalista, fotográfica b&w</span></p>
+                <p><strong data-key="influences_lang_title">Idioma:</strong><span data-key="influences_lang_text"> Inglés</span></p>
+            </div>
+            <p data-key="influences_p2">El estilo de Afternoon Desires se caracteriza por sus atmósferas envolventes, guitarras con texturas shoegaze, sintetizadores melancólicos y letras introspectivas. La banda busca crear paisajes sonoros que evoquen nostalgia y contemplación, fusionando la energía del post-punk con la delicadeza del dream pop.</p>
+        </div>
+    </section>
+
+    <!-- 3. MIEMBROS -->
+    <section id="miembros" class="members">
+        <h2 data-key="members_title">MIEMBROS</h2>
+        <div class="members-grid">
+            <div id="leo-member" class="member">
+                <img src="images/members/leo.jpg" alt="Leo Arévalo">
+                <h3 data-key="member_leo_name">Leo Arévalo</h3>
+                <p data-key="member_leo_role">Voz / Letras / Música / Producción</p>
+            </div>
+            <div id="criss-member" class="member">
+                <img src="images/members/criss.jpg" alt="Criss Soriano">
+                <h3 data-key="member_criss_name">Criss Soriano</h3>
+                <p data-key="member_criss_role">Guitarra / Sintetizadores</p>
+            </div>
+            <div id="pablo-member" class="member">
+                <img src="images/members/pablo.jpg" alt="Pablo Fuster">
+                <h3 data-key="member_pablo_name">Pablo Fuster</h3>
+                <p data-key="member_pablo_role">Bajo</p>
+            </div>
+            <div id="benja-member" class="member">
+                <img src="images/members/benja.jpg" alt="Benjamín Rivera">
+                <h3 data-key="member_benja_name">Benjamín Rivera</h3>
+                <p data-key="member_benja_role">Batería</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. DISCOGRAFÍA -->
+    <section id="discografia" class="discografia">
+        <h2 data-key="discography_title">DISCOGRAFÍA</h2>
+        <div class="bio-content">
+            <p data-key="discography_p1">Afternoon Desires ha lanzado 4 singles y 2 EP que incluyen sus canciones más populares: "For You", "It's Too Late" y "Darkside", temas que definen el arte sonoro de la banda en su máximo esplendor. Sus composiciones, llamadas "Textures & Atmospheres" y consideradas su "lado B", muestran su sonoridad más cruda y característica en bruto.</p>
+            <p data-key="discography_p2">También incluyeron un cover de la banda Cigarettes After Sex, "Cry", el cual ha tenido muy buena aceptación a nivel mundial, llegando a sonar en Asia, Rusia y países europeos, superando las 30.000 reproducciones en Spotify a junio de 2024.</p>
+            <p data-key="discography_p3">Actualmente, se encuentran produciendo su primer disco de larga duración, llamado "The Weight of Silence", que incluirá 10 canciones con las que buscan ampliar su sonido atmosférico, incorporando más guitarras eléctricas, sintetizadores y nuevas rítmicas en la batería, pero conservando el estilo vocal que los caracteriza.</p>
+        </div>
+    </section>
+
+    <!-- 5. PUBLICACIONES -->
+    <section id="publicaciones" class="publicaciones">
+        <h2 data-key="releases_title">PUBLICACIONES</h2>
+        <div class="publications-grid">
+            <a href="https://open.spotify.com/track/2a9OqhhGpvcmjIvoEN3o8d" target="_blank" class="publication-item">
+                <img src="images/CARATULA FOR YOU  RMSTR.jpg" alt="Cover de For You">
+                <h3 data-key="release_foryou">Single: For You (2022)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/track/45ePaqmS2FkvQpcLhQUHtA?si=9twTfvRiRAWI4mcyOw1ctg&context=spotify%3Aalbum%3A6EhuW7WB4B7l1cY6A4BqE1&nd=1&dlsi=38924f244fab483b" target="_blank" class="publication-item">
+                <img src="images/CARATULA ITS DONE PNG.jpg" alt="Cover de It's Done">
+                <h3 data-key="release_itsdone">Single: It's Done (2023)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/1aHj7VMBbjNzX1QIHGbymH" target="_blank" class="publication-item">
+                <img src="images/CARATULA THOUSAND PNG COLOR .jpg" alt="Cover de Thousand Years">
+                <h3 data-key="release_thousand">Single: Thousand Years (2023)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/6xvyUCZWWjmNdNxksCx1rD" target="_blank" class="publication-item">
+                <img src="images/CARATULA GOODBYE LETTER JPG.jpg" alt="Cover de Goodbye Letter">
+                <h3 data-key="release_goodbye">Single: Goodbye Letter (2023)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/6szzqssuTauBMuyliHZj3N" target="_blank" class="publication-item">
+                <img src="images/CARATULA EP AFTERNOON PNG.jpg" alt="Cover de EP Homónimo">
+                <h3 data-key="release_ep_ad">EP: Afternoon Desires (2023)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/1wEO9bEetuaG5boUDBITz2" target="_blank" class="publication-item">
+                <img src="images/CARATULA EP DVRKDISE.jpg" alt="Cover de EP DVRKSIDE">
+                <h3 data-key="release_ep_dvrkside">EP: DVRKSIDE (2024)</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/5XWcEarZAkhTm1Ldu8MyHZ" target="_blank" class="publication-item">
+                <img src="images/CARATULA TEXTURES PNG.jpg" alt="Cover de Textures & Atmospheres">
+                <h3 data-key="release_textures">Compilado: Textures & Atmospheres</h3>
+            </a>
+            <a href="https://open.spotify.com/intl-es/album/2oO2xRxpYplEqPGJLGhQJK" target="_blank" class="publication-item">
+                <img src="images/CARATULA I LIVE EACH DAY WITH YOU.jpg" alt="Cover de I live each day with you">
+                <h3 data-key="release_iledwy">Adelanto 2025: I live each day with you</h3>
+            </a>
+        </div>
+        <div class="publications-content">
+            <p class="platforms" data-key="releases_platforms">Disponibles en Spotify, YouTube, Apple Music, Amazon Music y Bandcamp.</p>
+        </div>
+    </section>
+
+    <!-- 6. MEDIA -->
+    <section id="media" class="media">
+        <h2 data-key="media_title">MEDIA</h2>
+        <div class="video-grid">
+            <a href="https://www.youtube.com/watch?v=1T8Tz91s8k4" target="_blank" class="video-item">
+                <img src="images/media/dvrkside-lyric.jpg" alt="Dvrkside Lyric Video">
+                <h3>Afternoon Desires - Dvrkside Lyric - Español</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=sZA82pVtllc" target="_blank" class="video-item">
+                <img src="images/media/for you video oficial.jpg" alt="For You Video">
+                <h3>Afternoon Desires - For You</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=mPM_l5VT7y4" target="_blank" class="video-item">
+                <img src="images/media/boundless lyric.jpg" alt="Boundless Lyric Video">
+                <h3>Afternoon Desires - Boundless Lyric</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=EE5fUqY3Yr8" target="_blank" class="video-item">
+                <img src="images/media/cry-lyric.jpg" alt="Cry Cover">
+                <h3>Afternoon Desires - Cry - A Cigarettes After Sex Cover</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=8c3aC4ZCLJc" target="_blank" class="video-item">
+                <img src="images/media/Dvrkside-sounds.jpg" alt="Dvrkside Sounds">
+                <h3>Dvrkside Sounds</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=0KU5kdh8VFM" target="_blank" class="video-item">
+                <img src="images/media/Entrevista.jpg" alt="Entrevista">
+                <h3 data-key="media_video6">Entrevista</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=v5IE_-wnwgg" target="_blank" class="video-item">
+                <img src="images/media/Its to lat 500 days con summer.jpg" alt="Its to lat 500 days con summer">
+                <h3>It's Too Late (500 Days of Summer)</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=B_tPu9yKLnE" target="_blank" class="video-item">
+                <img src="images/media/Nuevo Ep.jpg" alt="Nuevo Ep">
+                <h3 data-key="media_video8">Adelanto nuevo EP</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- 7. PRÓXIMAS FECHAS -->
+    <section id="dates" class="dates-section">
+        <div class="container">
+            <h2 data-key="dates_title">Próximas Fechas</h2>
+            <div class="dates-list">
+                <div class="date-item">
+                    <div class="date-info">
+                        <span class="date-month" data-key="date_1_month">JUL</span>
+                        <span class="date-day">18</span>
+                    </div>
+                    <div class="venue-info">
+                        <h3 data-key="date_1_venue">Cocina Clandestina</h3>
+                        <p data-key="date_1_location">Antonia Lopez de Bello 0108, Providencia</p>
+                    </div>
+                    <a href="https://portaldisc.com/evento/afternoondesiresencocinaclandestina" target="_blank" class="ticket-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ticket-icon" viewBox="0 0 16 16">
+                            <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                            <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 1 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+                        </svg>
+                        <span data-key="date_1_tickets">Comprar Entradas</span>
+                    </a>
+                </div>
+                <!-- <p data-key="dates_text">Actualmente no tenemos fechas programadas. ¡Síguenos en nuestras redes para estar al tanto de futuros anuncios!</p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CONTACTO -->
+    <footer id="contacto">
+        <div class="contact-info">
+            <h2 data-key="contact_title">CONTACTO</h2>
+            <a href="mailto:afternoondesires@gmail.com" class="email-link" data-key="contact_email_text">afternoondesires@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="language.js"></script>
+</body>
+</html> 
+</html> 
