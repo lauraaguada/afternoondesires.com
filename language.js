@@ -54,6 +54,7 @@ const translations = {
         member_pablo_role: "Bajo",
         member_benja_role: "Batería",
         contact_title: "CONTACTO",
+        contact_text: "Para contrataciones o prensa, escríbenos a:",
         contact_email_text: "afternoondesires@gmail.com",
         footer_text: "© 2024 Afternoon Desires. All rights reserved.",
         nav_dates: "Próximas Fechas",
@@ -119,6 +120,7 @@ const translations = {
         member_pablo_role: "Bass",
         member_benja_role: "Drums",
         contact_title: "CONTACT",
+        contact_text: "For bookings or press, write to:",
         contact_email_text: "afternoondesires@gmail.com",
         footer_text: "© 2024 Afternoon Desires. All rights reserved.",
         nav_dates: "Upcoming Dates",
@@ -184,6 +186,7 @@ const translations = {
         member_pablo_role: "Basse",
         member_benja_role: "Batterie",
         contact_title: "CONTACT",
+        contact_text: "Pour les réservations ou la presse, écrivez à :",
         contact_email_text: "afternoondesires@gmail.com",
         footer_text: "© 2024 Afternoon Desires. Tous droits réservés.",
         nav_dates: "Dates à venir",
@@ -249,6 +252,7 @@ const translations = {
         member_pablo_role: "Baixo",
         member_benja_role: "Bateria",
         contact_title: "CONTATO",
+        contact_text: "Para contratações ou imprensa, escreva para:",
         contact_email_text: "afternoondesires@gmail.com",
         footer_text: "© 2024 Afternoon Desires. Todos os direitos reservados.",
         nav_dates: "Datas de Eventos",
@@ -314,4 +318,49 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load saved language or default
     const savedLang = localStorage.getItem('language') || 'es';
     setLanguage(savedLang);
+
+    // --- Visitor Counter ---
+    const counterElement = document.getElementById('visit-counter-value');
+
+    const updateVisitorCounter = () => {
+        const namespace = 'afternoondesires.com';
+        const key = 'site';
+        const url = `https://counterapi.com/api/${namespace}/${key}`;
+
+        // Use readOnly=true if the user has already visited in this session
+        const hasVisited = sessionStorage.getItem('dvrkside_visited');
+        // If visited, we only read. If not, we hit (default behavior).
+        const fetchUrl = hasVisited ? `${url}?readOnly=true` : url;
+
+        fetch(fetchUrl)
+            .then(response => {
+                if (!response.ok) {
+                    // If the network request itself fails, it's an error.
+                    throw new Error('Network response was not ok for visitor counter.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Assuming the API returns a JSON with a 'value' property.
+                if (counterElement && data && typeof data.value !== 'undefined') {
+                    counterElement.innerText = data.value.toLocaleString('es-ES');
+                } else {
+                    // Handle cases where the API response is not as expected.
+                    throw new Error('Invalid data format from counter API.');
+                }
+                
+                // Mark as visited for this session if it wasn't already.
+                if (!hasVisited) {
+                    sessionStorage.setItem('dvrkside_visited', 'true');
+                }
+            })
+            .catch(error => {
+                console.error('Error with visitor counter:', error);
+                if (counterElement) {
+                    counterElement.innerText = 'N/A';
+                }
+            });
+    };
+
+    updateVisitorCounter();
 });

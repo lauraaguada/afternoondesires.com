@@ -196,6 +196,7 @@ body {
 section {
     padding: 6rem 2rem;
     margin-bottom: 2rem;
+    scroll-margin-top: 100px;
 }
 
 h2, h3 {
@@ -664,11 +665,20 @@ h2 {
 }
 
 .contact-info p {
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.contact-info .contact-email {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info .contact-email:hover {
+    text-decoration: underline;
 }
 
 .whatsapp-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -722,6 +732,18 @@ footer {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 4rem;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.visitor-counter {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 /* Responsive Design */
@@ -924,4 +946,8 @@ footer {
 .publication-item h3 {
     margin-top: 1rem;
     font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
 } 
