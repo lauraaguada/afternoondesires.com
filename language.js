@@ -60,9 +60,9 @@ const translations = {
         nav_dates: "Próximas Fechas",
         dates_title: "Próximas Fechas",
         dates_text: "Actualmente no tenemos fechas programadas. ¡Síguenos en nuestras redes para estar al tanto de futuros anuncios!",
-        date_1_month: "JUL",
-        date_1_venue: "Cocina Clandestina",
-        date_1_location: "Antonia Lopez de Bello 0108, Providencia",
+        date_1_month: "AGO",
+        date_1_venue: "Lanzamiento \"Mar de Andrómeda\"",
+        date_1_location: "Diáfanos + Afternoon Desires + Ermitaño",
         date_1_tickets: "Comprar Entradas"
     },
     en: {
@@ -126,9 +126,9 @@ const translations = {
         nav_dates: "Upcoming Dates",
         dates_title: "Upcoming Dates",
         dates_text: "We currently have no scheduled dates. Follow us on our networks to stay tuned for future announcements!",
-        date_1_month: "JUL",
-        date_1_venue: "Cocina Clandestina",
-        date_1_location: "Antonia Lopez de Bello 0108, Providencia",
+        date_1_month: "AUG",
+        date_1_venue: "\"Mar de Andrómeda\" Launch",
+        date_1_location: "Diáfanos + Afternoon Desires + Ermitaño",
         date_1_tickets: "Buy Tickets"
     },
     fr: {
@@ -192,9 +192,9 @@ const translations = {
         nav_dates: "Dates à venir",
         dates_title: "Dates à venir",
         dates_text: "Nous n'avons actuellement aucune date prévue. Suivez-nous sur nos réseaux pour être informés des futures annonces!",
-        date_1_month: "JUIL",
-        date_1_venue: "Cocina Clandestina",
-        date_1_location: "Antonia Lopez de Bello 0108, Providencia",
+        date_1_month: "AOÛT",
+        date_1_venue: "Lancement \"Mar de Andrómeda\"",
+        date_1_location: "Diáfanos + Afternoon Desires + Ermitaño",
         date_1_tickets: "Acheter des billets"
     },
     pt: {
@@ -258,9 +258,9 @@ const translations = {
         nav_dates: "Datas de Eventos",
         dates_title: "Próximas Datas",
         dates_text: "Atualmente não temos datas agendadas. Siga-nos em nossas redes para ficar por dentro de futuros anúncios!",
-        date_1_month: "JUL",
-        date_1_venue: "Cocina Clandestina",
-        date_1_location: "Antonia Lopez de Bello 0108, Providencia",
+        date_1_month: "AGO",
+        date_1_venue: "Lançamento \"Mar de Andrómeda\"",
+        date_1_location: "Diáfanos + Afternoon Desires + Ermitaño",
         date_1_tickets: "Comprar Ingressos"
     }
 };
