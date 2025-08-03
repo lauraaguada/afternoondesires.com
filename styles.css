@@ -465,6 +465,67 @@ h2 {
     background-color: #ddd;
 }
 
+/* Shows Section - CENTERED BOX */
+#shows {
+    padding: 4rem 2rem !important;
+    background-color: #111 !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#shows .container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+#shows h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 2rem !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+}
+
+#shows .shows-simple-list {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 2rem !important;
+    margin: 0 auto !important;
+    max-width: 900px !important;
+    width: 95% !important;
+    box-shadow: none !important;
+}
+
+#shows .shows-simple-list p {
+    font-size: 1.2rem !important;
+    color: #fff !important;
+    margin: 0 0 1rem 0 !important;
+    padding: 1rem 2rem !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #444 !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
+}
+
+#shows .shows-simple-list p:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+
+#shows .shows-simple-list p:hover {
+    background-color: #2a2a2a !important;
+    color: #fff !important;
+    transform: scale(1.02) !important;
+}
+
 /* Media Section */
 .media {
     background-color: #000;
@@ -950,4 +1011,7 @@ footer {
 
 html {
     scroll-behavior: smooth;
-} 
+} /* FORCE RELOAD Sat Aug  2 22:56:42 -04 2025 */
+/* UPDATE 22:59:20 */
+/* WIDER BOX 23:01:08 */
+/* REMOVE BACKGROUND 23:47:07 */
