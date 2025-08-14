@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <!-- Preload critical member images for faster loading -->
+    <link rel="preload" as="image" href="images/members/leo.jpg">
+    <link rel="preload" as="image" href="images/members/criss.jpg">
 </head>
 <body>
     <nav class="main-nav">
@@ -22,6 +25,7 @@
                 <a href="#discografia" data-key="nav_discography">Discografía</a>
                 <a href="#publicaciones" data-key="nav_releases">Publicaciones</a>
                 <a href="#media" data-key="nav_media">Media</a>
+                <a href="#galeria" data-key="nav_gallery">Galería</a>
                 <a href="#shows" data-key="nav_shows">Shows</a>
                 <a href="#dates" data-key="nav_dates">Próximas Fechas</a>
                 <a href="#contacto" data-key="nav_contact">Contacto</a>
@@ -152,22 +156,22 @@
         <h2 data-key="members_title">MIEMBROS</h2>
         <div class="members-grid">
             <div id="leo-member" class="member">
-                <img src="images/members/leo.jpg" alt="Leo Arévalo">
+                <img src="images/members/leo.jpg" alt="Leo Arévalo" loading="lazy" decoding="async">
                 <h3 data-key="member_leo_name">Leo Arévalo</h3>
                 <p data-key="member_leo_role">Voz / Letras / Música / Producción</p>
             </div>
             <div id="criss-member" class="member">
-                <img src="images/members/criss.jpg" alt="Criss Soriano">
+                <img src="images/members/criss.jpg" alt="Criss Soriano" loading="lazy" decoding="async">
                 <h3 data-key="member_criss_name">Criss Soriano</h3>
                 <p data-key="member_criss_role">Guitarra / Sintetizadores</p>
             </div>
             <div id="pablo-member" class="member">
-                <img src="images/members/pablo.jpg" alt="Pablo Fuster">
+                <img src="images/members/pablo.jpg" alt="Pablo Fuster" loading="lazy" decoding="async">
                 <h3 data-key="member_pablo_name">Pablo Fuster</h3>
                 <p data-key="member_pablo_role">Bajo</p>
             </div>
             <div id="benja-member" class="member">
-                <img src="images/members/benja.jpg" alt="Benjamín Rivera">
+                <img src="images/members/benja.jpg" alt="Benjamín Rivera" loading="lazy" decoding="async">
                 <h3 data-key="member_benja_name">Benjamín Rivera</h3>
                 <p data-key="member_benja_role">Batería</p>
             </div>
@@ -265,7 +269,62 @@
         </div>
     </section>
 
-    <!-- 7. SHOWS -->
+    <!-- 7. GALERÍA -->
+    <section id="galeria" class="gallery">
+        <h2 data-key="gallery_title">GALERÍA</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.30.54.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.31.08.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.31.22.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.31.53.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.32.56.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.33.13.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.33.26.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.33.42.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.34.33.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.34.50.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.35.33.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.36.39.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.37.12.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.37.54.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.38.49.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Galeria/WhatsApp Image 2025-08-14 at 11.39.12.jpeg" alt="Afternoon Desires" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. SHOWS -->
     <section id="shows" class="shows-section">
         <div class="container">
             <h2 data-key="shows_title">SHOWS</h2>
@@ -279,7 +338,7 @@
         </div>
     </section>
 
-    <!-- 8. TICKETS -->
+    <!-- 9. TICKETS -->
     <section id="dates" class="dates-section">
         <div class="container">
             <h2 data-key="dates_title">Tickets</h2>
@@ -306,7 +365,7 @@
         </div>
     </section>
 
-    <!-- 8. CONTACTO -->
+    <!-- 10. CONTACTO -->
     <section id="contacto">
         <div class="contact-info">
             <h2 data-key="contact_title">CONTACTO</h2>
@@ -324,5 +383,29 @@
     </footer>
 
     <script src="language.js"></script>
+    <script>
+        // Optimize member image loading
+        document.addEventListener('DOMContentLoaded', function() {
+            const memberImages = document.querySelectorAll('.member img');
+            
+            memberImages.forEach(img => {
+                // If image is already loaded
+                if (img.complete && img.naturalHeight !== 0) {
+                    img.classList.add('loaded');
+                } else {
+                    // Add loaded class when image loads
+                    img.addEventListener('load', function() {
+                        this.classList.add('loaded');
+                    });
+                    
+                    // Handle error case
+                    img.addEventListener('error', function() {
+                        this.style.opacity = '0.5';
+                        this.style.backgroundColor = '#333';
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
