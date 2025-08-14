@@ -1004,10 +1004,11 @@ footer {
         align-items: center;
     }
     
+    /* MOBILE MEMBERS PHOTOS - Larger size 14-Aug-2025 */
     .member img {
-        width: 150px;
-        height: 150px;
-        min-height: 150px;
+        width: 220px;
+        height: 220px;
+        min-height: 220px;
     }
 
     .releases-grid,
